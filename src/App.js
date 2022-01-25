@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>simbyChat🦁</h1>
+        <h1>HejChat!</h1>
         <SignOut />
       </header>
 
@@ -53,7 +53,7 @@ function SignIn() {
   return (
     <>
       <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button>
-      <p>Dobrodosli u alpha fazu testiranja simbyChat aplikacije. Uzivajte!</p>
+      <p>Ovo je jednostavna aplikacija za dopisivanje, koja je real-time povezana sa bazom podataka. Uzivajte!</p>
     </>
   )
 
@@ -103,7 +103,7 @@ function ChatRoom() {
 
     <form onSubmit={sendMessage}>
 
-      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Reci mi da me volis🥰" />
+      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Napisite nesto..." />
 
       <button type="submit" disabled={!formValue}>🕊️</button>
 
